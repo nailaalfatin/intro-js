@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro</title>
+</head>
+<body>
+    <h1>what can JavaScript do?</h1>
+
+    <!-- mengubah konten HTML -->
+    <p id="selamat">selamat malam</p>
+    <button type="button" onclick="document.getElementById('selamat').innerHTML = 'selamat pagi'">pagi</button>
+    <br><br>
+
+    <!-- mengubah atribut HTML -->
+    <a id="mylink" href="#">my link</a>
+    <br><br>
+    <button onclick="document.getElementById('mylink').href='https://www.linkedin.com'">Linkedin</button>
+    <button onclick="document.getElementById('mylink').href='https://www.medium.com'">Medium</button>
+    <br><br>
+
+    <!-- mengubah style css -->
+    <h3 id="color">JavaScript bisa mengubah style css</h3>
+    <br>
+    <button type="button" onclick="document.getElementById('color').style.color='red'">red</button>
+    <button type="button" onclick="document.getElementById('color').style.color='green'">green</button>
+
+    <!-- menyembunyikan html -->
+    <p id="hide">JavaScript bisa menyembunyikan elemen html</p>
+    <br>
+    <button type="button" onclick="document.getElementById('hide').style.display='none'">hide</button>
+    <button type="button" onclick="document.getElementById('hide').style.display='block'">show</button>
+
+    <!-- menampilkan html -->
+    <p id="show">JavaScript bisa menampilkan elemen html</p>
+    <br><br>
+    <button type="button" onclick="document.getElementById('show').style.display='block'">show</button>
+</body>
+</html>

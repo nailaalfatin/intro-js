@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penempatan JS</title>
+
+    <script>
+        // fungsi function itu untuk menjalankan perintah
+        function myParagraf() {
+            document.getElementById('halo').innerHTML = "hari ini puasa ga?";
+        }
+
+    </script>
+</head>
+<body>
+    <!-- Penempatan JS
+    1. Didalam tag <head>
+    2. Didalam tag <body>
+    3. File eksternal -->
+
+
+    <!-- didalam tag <head>  -->
+        <h1 id="halo">Hai maniez</h1>
+        <button type="button" onclick="myParagraf()">click aku!</button>
+
+
+     <!-- di dalam tag <body> pt.1 -->
+        <h1 id="color">color me!</h1>
+        <button type="button" onclick="redColor()">red</button>
+        
+
+    <!-- file eksternal -->
+        <p id="idn">IDN Mantabbb99</p>
+        <button type="button" onclick="bigSize()">big</button>
+        
+
+    <!-- di dalam tag <body> pt.2 -->
+        <script>
+            function redColor(){
+                document.getElementById('color').style.color='red' ;
+            }
+        </script>
+
+
+    <!-- js eksternal -->
+        <script src="myScript.js"></script>
+
+</body>
+</html>
